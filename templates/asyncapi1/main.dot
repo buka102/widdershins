@@ -44,9 +44,9 @@ Base URLs:
 
 {{ data.parameters = data.utils.getParameters(data.topic.parameters); }}
 
-|Parameter|In|Type|Required|Description|
-|---|---|---|---|---|
-{{~ data.parameters :p}}|{{=p.name}}|{{=p.in}}|{{=p.safeType}}|{{=p.required}}|{{=p.shortDesc || 'No description'}}|
+|Parameter|Type|
+|---|---|
+{{~ data.parameters :p}}|{{=p.name}}|{{=p.safeType}}| 
 {{~}}
 
 {{?}}
